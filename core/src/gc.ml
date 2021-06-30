@@ -84,6 +84,7 @@ module Stat = struct
     ; compactions = after.compactions - before.compactions
     ; top_heap_words = after.top_heap_words - before.top_heap_words
     ; stack_size = after.stack_size - before.stack_size
+    ; forced_major_collections = after.forced_major_collections - before.forced_major_collections
     }
   ;;
 end
